@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "Gerencie suas tarefas",
 };
 
+export const viewport: Viewport = {
+  themeColor: '#1E1E1E',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta name="color-scheme" content="#1E1E1E" />
+      </head>
       <body className={inter.className}>
         {children}
       </body>
