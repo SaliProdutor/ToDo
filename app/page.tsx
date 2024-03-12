@@ -97,10 +97,14 @@ export default function Home() {
             </div>
             <div className='flex gap-[.5rem]'>
               <p className=' text-purple font-bold text-[0,75rem]'>Concluídas</p>
+              {tasks.length > 0 ?
               <div className=' bg-gray-400 text-gray-200 rounded-full py-[0.2rem] px-[0.8rem] font-bold text-[0.75rem]'>{`${tasks.filter( i => i.check === true).length } de ${tasks.length}`}</div>
+              :
+              <div className=' bg-gray-400 text-gray-200 rounded-full py-[0.2rem] px-[0.8rem] font-bold text-[0.75rem]'>0</div>
+              }
             </div>
           </header>
-          {tasks ? 
+          {tasks.length > 0 ? 
             <div className=''>
               {tasks.map(items => {
                 return(
