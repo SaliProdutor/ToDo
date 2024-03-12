@@ -19,23 +19,7 @@ export default function Home() {
     task: string,
   }
   
-  const [tasks, setTasks] = useState<TasksProps[]>([
-    {
-      id: '01',
-      check: true,
-      task: 'Ir no mercado'
-    },
-    {
-      id: '02',
-      check: true,
-      task: 'Ir no mercado'
-    },
-    {
-      id: '03',
-      check: false,
-      task: 'Ir no mercado'
-    },
-  ])
+  const [tasks, setTasks] = useState<TasksProps[]>([])
 
   function handleDeleteTask(id: string | number): void {
     setTasks(prevTasks => prevTasks.filter(task => task.id !== id));
