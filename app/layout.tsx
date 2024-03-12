@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#1E1E1E',
+  themeColor: 'black',
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <meta name="color-scheme" content="#1E1E1E" />
+        <meta name="color-scheme" content="dark" />
       </head>
       <body className={inter.className}>
         {children}
