@@ -60,7 +60,7 @@ export default function Home() {
       <div className=" h-[12.5rem] bg-gray-700 flex justify-center items-center">
         <Image className=' w-[7.875rem]' src={Logo} alt='Logo ToDo'/>
       </div>
-      <div className=' flex flex-1 mt-[-1.5rem] justify-center'>
+      <div className=' flex flex-1 mt-[-1.5rem] justify-center px-2 lg:px-0'>
         <div className=' flex max-w-[50rem] flex-1 max-h-[4rem]'>
           <form onSubmit={handleAddTask} className=' flex gap-[.5rem] flex-1 justify-center'>
             <input 
@@ -88,7 +88,7 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className='flex justify-center pt-[4rem]'>
+      <div className='flex justify-center pt-[4rem] px-2 lg:px-0'>
         <div className=' flex max-w-[50rem] flex-col flex-1'>
           <header className='flex flex-1 justify-between min-h-[2.68rem] items-start'>
             <div className='flex gap-[.5rem]'>
